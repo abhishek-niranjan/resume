@@ -1,0 +1,249 @@
+%-------------------------
+
+% Resume in Latex
+
+% Author : Abhishek Niranjan
+
+% Shamelessly copied from https://github.com/sb2nov/resume
+
+%------------------------
+
+
+
+\documentclass[letterpaper,11pt]{article}
+
+
+
+\usepackage{latexsym}
+
+\usepackage[empty]{fullpage}
+
+\usepackage{titlesec}
+
+\usepackage{marvosym}
+
+\usepackage[usenames,dvipsnames]{color}
+
+\usepackage{verbatim}
+
+\usepackage{enumitem}
+
+\usepackage[hidelinks]{hyperref}
+
+\usepackage{fancyhdr}
+
+\usepackage[english]{babel}
+
+
+
+\pagestyle{fancy}
+
+\fancyhf{} % clear all header and footer fields
+
+\fancyfoot{}
+
+\renewcommand{\headrulewidth}{0pt}
+
+\renewcommand{\footrulewidth}{0pt}
+
+
+
+% Adjust margins
+
+\addtolength{\oddsidemargin}{-0.5in}
+
+\addtolength{\evensidemargin}{-0.5in}
+
+\addtolength{\textwidth}{1in}
+
+\addtolength{\topmargin}{-.5in}
+
+\addtolength{\textheight}{1.0in}
+
+
+
+\urlstyle{same}
+
+
+
+\raggedbottom
+
+\raggedright
+
+\setlength{\tabcolsep}{0in}
+
+
+
+% Sections formatting
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+
+
+%-------------------------
+
+% Custom commands
+
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-3pt}}
+  }
+}
+
+
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-5pt}}
+
+
+
+\renewcommand{\labelitemii}{$\circ$}
+
+
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-16pt}}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}\vspace{-4pt}}
+
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-9pt}}
+
+
+
+%-------------------------------------------
+
+%-------------------------------------------
+
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+\begin{document}
+
+
+
+%----------HEADING-----------------
+
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://abhishek-niranjan.github.io/}{\Large Abhishek Niranjan}} & Email : \href{mailto:abhishek.niranjan.iitkgp@gmail.com}{abhishek.niranjan.iitkgp@gmail.com}\\
+  \href{http://abhishek-niranjan.github.io/}{http://abhishek-niranjan.github.io} & Mobile : (+91)-8513902048\\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indian Institute of Technology(IIT)}{Kharagpur, India}
+      {Bachelor + Master of Technology in Computer Science;  CGPA: 7.98/10.0}{July 2013 -- July 2018}
+    \resumeSubheading
+      {Kendriya Vidyalaya}{Jodhpur, India}
+      {AISSCE (Grade XII);  Percentage: 93.6\%}{Apr 2011 -- Mar 2012}
+  \resumeSubHeadingListEnd
+
+
+
+
+
+%-----------EXPERIENCE-----------------
+
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Samsung Research Institute}{Bangalore, India}
+      {Senior Software Engineer}{Jun 2018 - Present}
+      \resumeItemListStart
+        \resumeItem{Voice Intelligence}
+          {Bixby is a voice assistant indigenous to Samsung smart devices. As a part of \textit{Automated Speech Recognition(ASR)} team, I built a variant of \textit{Transformer}, attention-based, architecture to achieve state-of-the-art results in \textit{Grapheme2Phoneme} problem.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Amplus Solar}{Gurgaon, India}
+      {Data Science Intern}{May 2017 - July 2017}
+      \resumeItemListStart
+        \resumeItem{Soiling Rate}
+          {Photovoltaic plants experience soiling phenomena which results in decrement of power generation. Developed an algorithm to compute the soiling rate from limited data to devise a \textit{cost-optimized} cleaning schedule of solar plants.}
+        \resumeItem{Power-Generation Forecasts}
+          {Engineered a forecasting module to predict hourly active power generation by a PV plant 
+          using \textit{gradient boosted trees}. achieving a correlation of 0.97; Augmented the feature set by utilizing OpenWeatherMap API.}
+        \resumeItem{Power-BI Reports}
+          {Automated the generation of daily visualization reports of Solar Plants portfolio in \textit{Power BI} by connecting MySQL server hosted on AWS EC2 instance. Built a GUI application using \textit{PyQt}4 to facilitate the data downloading from multiple dashboards.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Bidgely Technologies}{Bangalore, India}
+      {Data Science Intern}{May 2016 - July 2016}
+      \resumeItemListStart
+        \resumeItem{Vacation Detection}
+          {Bidgely's energy disaggregation technology helps consumers and utilities to adopt eco and pocket friendly consumption. Devised a sliding window algorithm to predict the vacation instances of the residents in \textit{MATLAB with precision \textgreater95\% and recall \textgreater70\%,} which got incorporated into production}
+        \resumeItem{Refrigeration Consumption}
+          {Worked on the energy disaggregation module to compute refrigerator consumption from low resolution energy data, which was pushed to disaggregation pipeline.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Outsy Inc.}{Mumbai, India}
+      {Application Developer Intern}{May 2015 - July 2015}
+      \resumeItemListStart
+        \resumeItem{Information Retrieval}
+          {Outsy is a lifestyle and event recommendations android application. Extracted artists' names from 15,000 Facebook textual posts using \textit{Stanford POSTagger} after NLTK assisted pre-processing; Generated artists' profile database using \textit{Wikipedia API, Youtube API, and SoundCloud API.} }
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PUBLICATIONS-----------------
+\section{Publications}
+  \resumeSubHeadingListStart
+    \resumeSubItem{\href{https://ieeexplore.ieee.org/document/8614746}{Drift in Online Social Media}}
+      {\textit{IEEE 9th Annual Information Technology, Electronics and Mobile Communication Conference (IEMCON), 2018}}
+    \resumeSubItem{\href{https://ieeexplore.ieee.org/document/7991589}{Citation Sentence Reuse Behavior of Scientists: A Case Study on Massive Bibliographic Text Dataset of Computer Science}}
+      {\textit{Proceedings of the 17th ACM/IEEE Joint Conference on Digital Libraries (JCDL), 2017}}
+  \resumeSubHeadingListEnd
+
+
+
+
+%-----------PROJECTS-----------------
+
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Scientific Document Clustering Based on Key-phrases}
+      {Focused on studying how the popularity of different tasks and techniques related to NLP Research emerges/varies with time as a part of Master's Thesis.}
+    \resumeSubItem{Sign Language Translation}
+      {Translation of American sign language gestures to text using flex sensing gloves.}
+    \resumeSubItem{Data Extractor from 2D Plots}
+      {A graph extractor that detects plots in any PDF and digitizes the graphs.}
+    \resumeSubItem{Optimal Bidding}
+      {Cost optimization algorithm employing solar power prediction to manage a gated community's electricity requirements.}
+  \resumeSubHeadingListEnd
+
+
+
+%
+
+%--------SKILLS------------
+
+\section{Skills}
+ \resumeSubHeadingListStart
+    \resumeSubItem{Languages}{Python, C++, SQL, Javascript}
+    \resumeSubItem{Frameworks \& Libraries}{TensorFlow, PyTorch, Scikit-learn}
+    \resumeSubItem{Softwares \& Tools}{MATLAB, Tableau, Power-BI, Git}
+    \resumeSubItem{Documentation}{\LaTeX}
+ \resumeSubHeadingListEnd
+
+
+
+
+
+%-------------------------------------------
+
+\end{document}
