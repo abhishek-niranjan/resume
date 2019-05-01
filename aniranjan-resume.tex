@@ -87,6 +87,7 @@
 % Custom commands
 
 \newcommand{\resumeItem}[2]{
+  %\setlength{\itemindent}{-2.5ex}
   \item\small{
     \textbf{#1}{: #2 \vspace{-3pt}}
   }
@@ -142,14 +143,15 @@
   \textbf{\href{http://abhishek-niranjan.github.io/}{\Large Abhishek Niranjan}} & Email : \href{mailto:abhishek.niranjan.iitkgp@gmail.com}{abhishek.niranjan.iitkgp@gmail.com}\\
   \href{http://abhishek-niranjan.github.io/}{http://abhishek-niranjan.github.io} & Mobile : (+91)-8513902048\\
 \end{tabular*}
+\vspace{-2ex}
 
 %-----------EDUCATION-----------------
-
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
       {Indian Institute of Technology(IIT)}{Kharagpur, India}
       {Bachelor + Master of Technology in Computer Science;  CGPA: 7.98/10.0}{July 2013 -- July 2018}
+      \vspace{-1.2ex}
     \resumeSubheading
       {Kendriya Vidyalaya}{Jodhpur, India}
       {AISSCE (Grade XII);  Percentage: 93.6\%}{Apr 2011 -- Mar 2012}
@@ -168,7 +170,9 @@
       {Senior Software Engineer}{Jun 2018 - Present}
       \resumeItemListStart
         \resumeItem{Voice Intelligence}
-          {Bixby is a voice assistant indigenous to Samsung smart devices. As a part of \textit{Automated Speech Recognition(ASR)} team, I built a variant of \textit{Transformer}, attention-based, architecture to achieve state-of-the-art results in \textit{Grapheme2Phoneme} problem.}
+          {Bixby is a voice assistant indigenous to Samsung smart devices. As a part of \textit{Automated Speech Recognition(ASR)} team, I built \textit{Hierarchical Attention based Transformer}, a sequence-to-sequence architecture to improve results of \textit{Grapheme2Phoneme} conversion module.}
+        \resumeItem{Grammatical Error Correction(GEC)}
+           {Currently working towards on-device textual processing module in smartphones to assist voice and keyboard enabled services; approaching the GEC problem as a sequence-2-sequence task with (hypothesis, reference) as the (source, target) sentence pair.   }
       \resumeItemListEnd
     \resumeSubheading
       {Amplus Solar}{Gurgaon, India}
@@ -223,7 +227,7 @@
     \resumeSubItem{Data Extractor from 2D Plots}
       {A graph extractor that detects plots in any PDF and digitizes the graphs.}
     \resumeSubItem{Optimal Bidding}
-      {Cost optimization algorithm employing solar power prediction to manage a gated community's electricity requirements.}
+      {Cost optimization algorithm employing solar power prediction to manage a gated community's electricity requirements; Our algorithm secured 1\textsuperscript{st} place in the Inter-IIT 2018 data science competition.}
   \resumeSubHeadingListEnd
 
 
@@ -234,8 +238,8 @@
 
 \section{Skills}
  \resumeSubHeadingListStart
-    \resumeSubItem{Languages}{Python, C++, SQL, Javascript}
-    \resumeSubItem{Frameworks \& Libraries}{TensorFlow, PyTorch, Scikit-learn}
+    \resumeSubItem{Languages}{Python, C++, SQL}
+    \resumeSubItem{Frameworks \& Libraries}{TensorFlow, PyTorch, Keras, Scikit-learn}
     \resumeSubItem{Softwares \& Tools}{MATLAB, Tableau, Power-BI, Git}
     \resumeSubItem{Documentation}{\LaTeX}
  \resumeSubHeadingListEnd
