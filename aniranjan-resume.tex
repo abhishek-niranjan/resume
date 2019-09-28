@@ -93,7 +93,12 @@
   }
 }
 
-
+\newcommand{\resumeItemx}[2]{
+  %\setlength{\itemindent}{-2.5ex}
+  \item\small{
+    \textbf{#1}{#2 \vspace{-3pt}}
+  }
+}
 
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
@@ -106,6 +111,7 @@
 
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-5pt}}
+\newcommand{\resumeSubItemx}[2]{\resumeItemx{#1}{#2}\vspace{-5pt}}
 
 
 
@@ -152,10 +158,10 @@
       {Indian Institute of Technology(IIT)}{Kharagpur, India}
       {Bachelor + Master of Technology in Computer Science;  CGPA: 7.96/10.0}{July 2013 -- July 2018}
       \vspace{-1.2ex}
-    \resumeSubheading
-      {Kendriya Vidyalaya}{Jodhpur, India}
-      {AISSCE (Grade XII);  Percentage: 93.6\%}{Apr 2011 -- Mar 2012}
-  \resumeSubHeadingListEnd
+%     \resumeSubheading
+%       {Kendriya Vidyalaya}{Jodhpur, India}
+%       {AISSCE (Grade XII);  Percentage: 93.6\%}{Apr 2011 -- Mar 2012}
+   \resumeSubHeadingListEnd
 
 
 
@@ -169,10 +175,12 @@
       {Samsung Research Institute}{Bangalore, India}
       {Senior Software Engineer}{Jun 2018 - Present}
       \resumeItemListStart
-        \resumeItem{Voice Intelligence}
-          {Bixby is a voice assistant indigenous to Samsung smart devices. As a part of \textit{Automated Speech Recognition(ASR)} team, I built \textit{Hierarchical Attention based Transformer}, a sequence-to-sequence architecture to improve results of \textit{Grapheme2Phoneme} conversion module.}
+        \resumeItem{Grapheme-to-Phoneme (G2P)}
+          {Bixby is a voice assistant indigenous to Samsung smart devices. As a part of \textit{Automated Speech Recognition(ASR)} team, I built Copy-Augmented Encoder-Decoder Bi-LSTM based architecture to achieve state-of-the-art results.}
         \resumeItem{Grammatical Error Correction(GEC)}
-           {Currently working towards on-device textual processing module in smartphones to assist voice and keyboard enabled services; approaching the GEC problem as a sequence-2-sequence task with (hypothesis, reference) as the (source, target) sentence pair.   }
+           {Approached the GEC problem as a sequence-2-sequence task with (hypothesis, reference) as the (source, target) sentence pair. Modified Transformer architecture to handle attention from multi Encoders in an hierarchical fashion for on-device textual processing module in smartphones. }
+        \resumeItem{Speech-to-Speech Translation}
+            {Presently working on translation problem involving conversion of Korean audio signal features to English audio signal features. Using Transformer model as the fundamental sequence-to-sequence architecture with addition of auxiliary decoders to train on parallel tri-phone aligned data.}
       \resumeItemListEnd
     \resumeSubheading
       {Amplus Solar}{Gurgaon, India}
@@ -207,10 +215,9 @@
 %-----------PUBLICATIONS-----------------
 \section{Publications}
   \resumeSubHeadingListStart
-    \resumeSubItem{\href{https://ieeexplore.ieee.org/document/8614746}{Drift in Online Social Media}}
-      {\textit{IEEE 9th Annual Information Technology, Electronics and Mobile Communication Conference (IEMCON), 2018}}
-    \resumeSubItem{\href{https://ieeexplore.ieee.org/document/7991589}{Citation Sentence Reuse Behavior of Scientists: A Case Study on Massive Bibliographic Text Dataset of Computer Science}}
-      {\textit{Proceedings of the 17th ACM/IEEE Joint Conference on Digital Libraries (JCDL), 2017}}
+    \resumeSubItemx{}{\textbf{Abhishek Niranjan}, M A B Shaik. (2019). \textit{Improving grapheme-to-phoneme conversion by investigating copying mechanism in recurrent architectures}. ASRU 2019}
+    \resumeSubItemx{}{\href{https://ieeexplore.ieee.org/document/8614746}{Ankan Mullick, Anindya Bhandari, \textbf{Abhishek Niranjan}, Nitesh Sekhar, Shrey Garg,  Riya Bubna, Mayank Roy. (2018). \textit{Drift in Online Social Media.} IEMCON 2018}}
+    \resumeSubItemx{}{\href{https://ieeexplore.ieee.org/document/7991589}{Mayank Singh, \textbf{Abhishek Niranjan}, Divyansh Gupta, Nikhil Angad Bakshi, Animesh Mukherjee, Pawan Goyal. (2017). \textit{Citation sentence reuse behavior of scientists: A case study on massive bibliographic text dataset of computer science.} JCDL 2017}}
   \resumeSubHeadingListEnd
 
 
@@ -220,8 +227,8 @@
 
 \section{Projects}
   \resumeSubHeadingListStart
-    \resumeSubItem{Scientific Document Clustering Based on Key-phrases}
-      {Focused on studying how the popularity of different tasks and techniques related to NLP Research emerges/varies with time as a part of Master's Thesis.}
+    % \resumeSubItem{Scientific Document Clustering Based on Key-phrases}
+    %   {Focused on studying how the popularity of different tasks and techniques related to NLP Research emerges/varies with time as a part of Master's Thesis.}
     \resumeSubItem{Sign Language Translation}
       {Translation of American sign language gestures to text using flex sensing gloves.}
     \resumeSubItem{Data Extractor from 2D Plots}
