@@ -108,6 +108,13 @@
     \end{tabular*}\vspace{-6pt}
 }
 
+\newcommand{\resumeSubheadingSingle}[2]{
+  \vspace{2pt}
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
 
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-5pt}}
@@ -156,7 +163,7 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Indian Institute of Technology(IIT)}{Kharagpur, India}
-      {Bachelor + Master of Technology in Computer Science;  CGPA: 7.96/10.0}{July 2013 -- July 2018}
+      {Bachelor + Master of Technology in Computer Science; }{July 2013 -- July 2018}
       \vspace{-1.2ex}
 %     \resumeSubheading
 %       {Kendriya Vidyalaya}{Jodhpur, India}
@@ -173,27 +180,37 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Samsung Research Institute}{Bangalore, India}
-      {Senior Software Engineer}{Jun 2018 - Present}
+      {Lead Engineer}{Mar 2020 - Present}
       \resumeItemListStart
-        \resumeItem{Grapheme-to-Phoneme (G2P)}
-          {Bixby is a voice assistant indigenous to Samsung smart devices. As a part of \textit{Automated Speech Recognition(ASR)} team, I built Copy-Augmented Encoder-Decoder Bi-LSTM based architecture to achieve state-of-the-art results.}
-        \resumeItem{Grammatical Error Correction(GEC)}
-           {Approached the GEC problem as a sequence-2-sequence task with (hypothesis, reference) as the (source, target) sentence pair. Modified Transformer architecture to handle attention from multi Encoders in an hierarchical fashion for on-device textual processing module in smartphones. }
-        \resumeItem{Speech-to-Speech Translation}
-            {Presently working on translation problem involving conversion of Korean audio signal features to English audio signal features. Using Transformer model as the fundamental sequence-to-sequence architecture with addition of auxiliary decoders to train on parallel tri-phone aligned data.}
+      \resumeItem{Whisper Speech Recognition}
+            {Bixby is a voice assistant indigenous to Samsung smart devices. As a part of
+            Automated Speech Recognition(ASR) team, built a speech-to-whisper conversion system using CycelGAN to generate synthetic whisper signals to augment training data. Research paper accepted in INTERSPEECH 2020.}
+      \resumeItem{Speech-to-Speech Translation}
+            {Presently working on speech translation problem involving conversion of Korean audio signal features to English audio signal features. Using Transformer model as the fundamental sequence-to-sequence architecture with addition of auxiliary decoders to train on parallel tri-phone aligned data.}
       \resumeItemListEnd
+    \resumeSubheadingSingle{Senior Software Engineer}{Jun 2018 - Mar 2020}
+      \resumeItemListStart
+      \resumeItem{Grapheme-to-Phoneme (G2P)}
+          {Built and deployed Copy-Augmented Encoder-Decoder Bi-LSTM based architecture to achieve state-of-the-art results on G2P conversion problem. Paper was published in ASRU 2019.}
+      \resumeItem{Grammatical Error Correction(GEC)}
+           {Developed and deployed a sequence-to-sequence model for Bixby's inverse text normalization (ITN) module. Modified Transformer architecture to handle attention from multi Encoders in an hierarchical fashion for on-device processing in smartphones. }
+      \resumeItemListEnd
+      \resumeSubheadingSingle{Technologies: TensorFlow, PyTorch, Keras, Shell Scripting}{}
+      \vspace{-4.5mm}
     \resumeSubheading
       {Amplus Solar}{Gurgaon, India}
       {Data Science Intern}{May 2017 - July 2017}
       \resumeItemListStart
         \resumeItem{Soiling Rate}
-          {Photovoltaic plants experience soiling phenomena which results in decrement of power generation. Developed an algorithm to compute the soiling rate from limited data to devise a \textit{cost-optimized} cleaning schedule of solar plants.}
-        \resumeItem{Power-Generation Forecasts}
+          {Photovoltaic plants experience soiling phenomena which affects the power generation. Developed an algorithm to compute the soiling rate from limited data to devise a \textit{cost-optimized} cleaning schedule of PV plants.}
+          \resumeItem{Power-Generation Forecasts}
           {Engineered a forecasting module to predict hourly active power generation by a PV plant 
           using \textit{gradient boosted trees}. achieving a correlation of 0.97; Augmented the feature set by utilizing OpenWeatherMap API.}
         \resumeItem{Power-BI Reports}
           {Automated the generation of daily visualization reports of Solar Plants portfolio in \textit{Power BI} by connecting MySQL server hosted on AWS EC2 instance. Built a GUI application using \textit{PyQt}4 to facilitate the data downloading from multiple dashboards.}
       \resumeItemListEnd
+      \resumeSubheadingSingle{Technologies: NumPy, Pandas, Scikit-Learn, PyQt}{}
+      \vspace{-4.5mm}
     \resumeSubheading
       {Bidgely Technologies}{Bangalore, India}
       {Data Science Intern}{May 2016 - July 2016}
@@ -203,6 +220,8 @@
         \resumeItem{Refrigeration Consumption}
           {Worked on the energy disaggregation module to compute refrigerator consumption from low resolution energy data, which was pushed to disaggregation pipeline.}
       \resumeItemListEnd
+      \resumeSubheadingSingle{Technologies: MATLAB}{}
+      \vspace{-4mm}
     \resumeSubheading
       {Outsy Inc.}{Mumbai, India}
       {Application Developer Intern}{May 2015 - July 2015}
@@ -210,21 +229,23 @@
         \resumeItem{Information Retrieval}
           {Outsy is a lifestyle and event recommendations android application. Extracted artists' names from 15,000 Facebook textual posts using \textit{Stanford POSTagger} after NLTK assisted pre-processing; Generated artists' profile database using \textit{Wikipedia API, Youtube API, and SoundCloud API.} }
       \resumeItemListEnd
-  \resumeSubHeadingListEnd
-
-%-----------PUBLICATIONS-----------------
-\section{Publications}
-  \resumeSubHeadingListStart
-    \resumeSubItemx{}{\textbf{Abhishek Niranjan}, M A B Shaik. (2019). \textit{Improving grapheme-to-phoneme conversion by investigating copying mechanism in recurrent architectures}. ASRU 2019}
-    \resumeSubItemx{}{\href{https://ieeexplore.ieee.org/document/8614746}{Ankan Mullick, Anindya Bhandari, \textbf{Abhishek Niranjan}, Nitesh Sekhar, Shrey Garg,  Riya Bubna, Mayank Roy. (2018). \textit{Drift in Online Social Media.} IEMCON 2018}}
-    \resumeSubItemx{}{\href{https://ieeexplore.ieee.org/document/7991589}{Mayank Singh, \textbf{Abhishek Niranjan}, Divyansh Gupta, Nikhil Angad Bakshi, Animesh Mukherjee, Pawan Goyal. (2017). \textit{Citation sentence reuse behavior of scientists: A case study on massive bibliographic text dataset of computer science.} JCDL 2017}}
+      \resumeSubheadingSingle{Technologies: Python, Django, NLTK, Graph API}{}
   \resumeSubHeadingListEnd
 
 
 
+%--------SKILLS------------
+
+% \section{Skills}
+%  \resumeSubHeadingListStart
+%     \resumeSubItem{Languages}{Python, C++, SQL}
+%     \resumeSubItem{Frameworks \& Libraries}{TensorFlow, PyTorch, Keras, Scikit-learn, NumPy, pandas}
+%     \resumeSubItem{Softwares \& Tools}{MATLAB, Tableau, Power-BI,  Google Cloud Platform, AWS, Git}
+%     \resumeSubItem{Documentation}{\LaTeX}
+%  \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------------
-
+\vspace{1mm}
 \section{Projects}
   \resumeSubHeadingListStart
     % \resumeSubItem{Scientific Document Clustering Based on Key-phrases}
@@ -238,18 +259,18 @@
   \resumeSubHeadingListEnd
 
 
+\vspace{1mm}
+%-----------PUBLICATIONS-----------------
+\section{Publications}
+  \resumeSubHeadingListStart
+    \resumeSubItemx{}{G P R Reddy, Gowtham P V, \textbf{A Niranjan}, K Saranu, R Sarma, M A B Shaik, P Paramasiyam. \textit{Whisper augmented speech recognition system using CycleGAN as speech to whisper domain transfer}. INTERSPEECH 2020}
+    \resumeSubItemx{}{\textbf{A Niranjan}, M A B Shaik. \textit{Improving grapheme-to-phoneme conversion by investigating copying mechanism in recurrent architectures}. ASRU 2019}
+    \resumeSubItemx{}{\href{https://ieeexplore.ieee.org/document/8614746}{A Mullick, A Bhandari, \textbf{A Niranjan}, N Sekhar, S Garg,  R Bubna, M Roy \textit{Drift in Online Social Media} IEMCON 2018}}
+    \resumeSubItemx{}{\href{https://ieeexplore.ieee.org/document/7991589}{Mayank Singh, \textbf{A Niranjan}, D Gupta, N A Bakshi, A Mukherjee, P Goyal. \textit{Citation sentence reuse behavior of scientists: A case study on massive bibliographic text dataset of computer science.} JCDL 2017}}
+  \resumeSubHeadingListEnd
 
-%
 
-%--------SKILLS------------
 
-\section{Skills}
- \resumeSubHeadingListStart
-    \resumeSubItem{Languages}{Python, C++, SQL}
-    \resumeSubItem{Frameworks \& Libraries}{TensorFlow, PyTorch, Keras, Scikit-learn}
-    \resumeSubItem{Softwares \& Tools}{MATLAB, Tableau, Power-BI, Git}
-    \resumeSubItem{Documentation}{\LaTeX}
- \resumeSubHeadingListEnd
 
 
 
